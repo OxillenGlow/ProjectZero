@@ -16,7 +16,7 @@ public final class RenderManager {
     private final Set<ChunkPos> pendingChunks = Collections.newSetFromMap(new ConcurrentHashMap<>());
     private int viewDistance = 1;
     private static final double CHUNK_METERS = BufferedChunk.SIZE * 0.5;
-    private int viewHeight = -1;
+    private int viewHeight = 0;
     Player player;
     Node nd;
     AssetManager assetManager;
